@@ -36,3 +36,5 @@ under all of the comments, add:
  */5 * * * * /usr/bin/sudo -H /usr/local/bin/checkwifi.sh >> /dev/null 2>&1
  ```
 We now have our python daemon plus another script to check if there is Wi-Fi avaliable. Both these scripts run at boot. If we ever lose Wi-Fi or detect some network problems the Raspberry will reboot and attempt to find devices again. 
+
+Developed with :heart: by Upframe

@@ -95,7 +95,7 @@ def whosHere(i):
             # Count how many 30 second intervals have happened since the device
             # disappeared from the network
             else:
-                counter[i] = counter[i] + 1
+                counter[i] += 1
                 print(occupant[i] + "'s counter at " + str(counter[i]))
                 sleep(30)
 
