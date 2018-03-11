@@ -59,17 +59,17 @@ def whosHere(i):
                 presentSent[i] = 1
                 notPresentSent[i] = 0
                 counter[i] = 0
-                sleep(900)
+                sleep(300)
             else:
-                # If a stream's already been sent, just wait for 15 minutes
+                # If a stream's already been sent, just wait for 5 minutes
                 counter[i] = 0
-                sleep(900)
+                sleep(300)
         # If a listed device address is not present, print and stream
         else:
             print(occupant[i] + "'s device is not present")
-            # Only consider a device offline if it's counter has reached 30
-            # This is the same as 15 minutes passing
-            if counter[i] == 30 or firstRun[i] == 1:
+            # Only consider a device offline if it's counter has reached 10
+            # This is the same as 5 minutes passing
+            if counter[i] == 10 or firstRun[i] == 1:
                 firstRun[i] = 0
                 if notPresentSent[i] == 0:
                     # Stream that someone left
