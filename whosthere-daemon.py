@@ -5,9 +5,9 @@ from time import sleep
 from threading import Thread
 
 # Array of names
-occupant = ["Sofia"]
+occupant = ["Malik Piara", "Mariana Mela Martins", "Ulisses Ferreira"]
 # MAC addresses for our members
-address = ["f0:03:8c:ff:7b:27"]
+address = ["74:d2:1d:5d:c2:ea", "28:ed:6a:b9:76:25", "dc:85:de:f2:23:e1"]
 #User ids?
 userid = ["123"]
 
